@@ -19,12 +19,13 @@ class AuthRouterClass {
     }
 
     routes(){
-        authRouter.get('/login', (req, res) => {
-            res.render('login');
+        authRouter.post('/login', (req, res) => {
+            res.json('login');
+            
         }); 
 
-        authRouter.get('/register', (req, res) => {
-            res.render('register');
+        authRouter.post('/register', (req, res) => {
+            res.json('register');
         }); 
 
     }

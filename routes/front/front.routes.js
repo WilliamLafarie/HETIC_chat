@@ -20,11 +20,19 @@ class FrontRouterClass {
 
     routes(){
         frontRouter.get('/', (req, res) => {
-            res.render('index');
-        });    
+            res.render('index', { connected: false});
+        });
+        
+        frontRouter.get('/login', (req, res) => {
+            res.render('login', { connected: false});
+        });
+
+        frontRouter.get('/register', (req, res) => {
+            res.render('register', { connected: false});
+        });
 
         frontRouter.get('/chat', (req, res) => {
-            res.render('chat');
+            res.render('chat', { connected: false});
         });       
     }
 }
