@@ -24,4 +24,4 @@ mainRouter.use('/', frontRouter.init());
 /* 
 Export 
 */
-module.exports = { mainRouter };
+module.exports = mainRouter;
